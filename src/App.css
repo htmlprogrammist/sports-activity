@@ -1,0 +1,16 @@
+#App {
+  display: flex;
+  flex-direction: row;
+}
+
+#activity_rings_container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  padding: 30px;
+  justify-content: space-between;
+  width: fit-content;
+}
+
+#second {
+  display: flex;
+}
