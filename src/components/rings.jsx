@@ -3,9 +3,14 @@ import styled from "styled-components"
 import { rgba } from "polished"
 import Chart from "react-apexcharts"
 
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
 const Card = styled.div`
-  width: 240px;
-  border-radius: 3rem;
+  width: ${props => props.width};
+  border-radius: 40px;
   background: #191919;
 `
 
@@ -14,7 +19,7 @@ const CardHeader = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  height: 64px;
+  height: 42px;
 `
 
 const ChartWrapper = styled(Chart)`
@@ -22,7 +27,7 @@ const ChartWrapper = styled(Chart)`
   justify-content: center;
 `
 
-const CardText = styled.div`
+const CardText = styled.p`
   font-size: ${props => props.size};
   font-weight: ${props => (props.bold ? 700 : 400)};
   color: ${props => rgba('white', props.opacity)};
@@ -49,22 +54,25 @@ const state = {
 }
 
 const ActivityRings = () => (
-  <Card>
-    <CardHeader>
-      <CardText size="1rem" opacity={0.75}>
-        Today
-      </CardText>
-      {/* <CardText size="0.75rem" opacity={0.5}> */}
-      {/* <CardText size="1rem" opacity={0.75}>
-        Today
-      </CardText> */}
-    </CardHeader>
-    <ChartWrapper
-      options={state.options}
-      series={state.series}
-      type="radialBar"
-    />
-  </Card>
+  <Wrapper>
+    <Card width="auto">
+      <CardHeader>
+        <CardText size="1rem" opacity={0.75}>
+          Today
+        </CardText>
+        {/* <CardText size="0.75rem" opacity={0.5}> */}
+        {/* <CardText size="1rem" opacity={0.75}>
+          Today
+        </CardText> */}
+      </CardHeader>
+      <ChartWrapper
+        options={state.options}
+        series={state.series}
+        type="radialBar"
+      />
+    </Card>
+    <h1>Шаги: 10000</h1>
+  </Wrapper>
 )
 
 export default ActivityRings

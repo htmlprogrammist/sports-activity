@@ -1,16 +1,24 @@
 #App {
-  display: flex;
-  flex-direction: row;
+  /* display: grid;
+  grid-template-rows: 50% 50%; */
+  overflow: hidden;
 }
 
-#activity_rings_container {
+/* #first {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto;
-  padding: 30px;
+  grid-template-rows: auto auto;
+} */
+
+#activity_rings_container {
+  overflow: scroll;
+  display: grid;
+  grid-template-columns: 300px 250px 200px 200px 200px 200px 200px;
+  padding: 40px;
   justify-content: space-between;
-  width: fit-content;
+  column-gap: 40px;
 }
 
 #second {
-  display: flex;
+  display: grid;
+  grid-template-columns: 66% 34%;
 }
