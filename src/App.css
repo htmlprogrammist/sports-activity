@@ -18,6 +18,14 @@
   column-gap: 40px;
 }
 
+#inputs {
+  display: flex;
+  flex-direction: row;
+  padding: 0 40px;
+  gap: 20px;
+  height: 26px;
+}
+
 #second {
   display: grid;
   grid-template-columns: 66% 34%;

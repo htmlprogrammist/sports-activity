@@ -33,12 +33,7 @@ const CardText = styled.p`
   color: ${props => rgba('white', props.opacity)};
 `
 
-const countThreeSeriesInPercentage = (a, b, c) => {
-  return [a, b, c]
-}
-
 let state = {
-  series: countThreeSeriesInPercentage(10, 30, 45),
   options: {
     plotOptions: {
       radialBar: {
@@ -57,7 +52,7 @@ let state = {
   }
 }
 
-const ActivityRings = () => (
+const ActivityRings = (props) => (
   <Wrapper>
     <Card width="auto">
       <CardHeader>
@@ -71,7 +66,7 @@ const ActivityRings = () => (
       </CardHeader>
       <ChartWrapper
         options={state.options}
-        series={state.series}
+        series={props.series}
         type="radialBar"
       />
     </Card>
@@ -79,4 +74,4 @@ const ActivityRings = () => (
   </Wrapper>
 )
 
-export default ActivityRings
+export default ActivityRings;

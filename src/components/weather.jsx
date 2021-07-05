@@ -10,4 +10,4 @@ const WeatherWidget = () => {
   <Container>Виджет погоды</Container>
 }
 
-export default WeatherWidget
+export default WeatherWidget;
