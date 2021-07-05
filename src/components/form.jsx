@@ -8,7 +8,7 @@ const Container = styled.section`
 const Form = () => (
   <Container>
     <div id="inputs-form" className="inputs">
-      <input type="date" placeholder="Дата"/>
+      <input type="date" id="datepicker" placeholder="Дата"/>
       <input placeholder="Подвижность" id="mobility" type="number"/>
       <input placeholder="Упражнения" id="exercises" type="number"/>
       <input placeholder="Активность" id="activity" type="number"/>
