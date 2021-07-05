@@ -1,5 +1,7 @@
 import './App.css';
 import ActivityRings from './components/rings'
+import WeatherWidget from './components/weather';
+import AdditionalInfo from './components/additional-info';
 
 function App() {
   return (
@@ -17,8 +19,8 @@ function App() {
         <section id="main-info"></section>
       </section>
       <section id="second">
-        <section id="additional-info">Сводка за неделю</section>
-        <section id="weather">Виджет погоды</section>
+        <AdditionalInfo></AdditionalInfo>
+        <WeatherWidget></WeatherWidget>
       </section>
     </div>
   );

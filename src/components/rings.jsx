@@ -33,8 +33,12 @@ const CardText = styled.p`
   color: ${props => rgba('white', props.opacity)};
 `
 
-const state = {
-  series: [30, 40, 45],
+const countThreeSeriesInPercentage = (a, b, c) => {
+  return [a, b, c]
+}
+
+let state = {
+  series: countThreeSeriesInPercentage(10, 30, 45),
   options: {
     plotOptions: {
       radialBar: {
