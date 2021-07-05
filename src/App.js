@@ -1,7 +1,8 @@
 import './App.css';
 import ActivityRings from './components/rings'
-import WeatherWidget from './components/weather';
-// import AdditionalInfo from './components/additional-info';
+import WeatherWidget from './components/weatherWidget'
+import AdditionalInfo from './components/additional-info'
+import Inputs from './components/inputs'
 
 function App() {
   return (
@@ -17,18 +18,12 @@ function App() {
           <ActivityRings series={[100, 90, 85]}></ActivityRings>
         </section>
         <section id="main-info">
-          <div id="inputs">
-            <input placeholder="Подвижность" id="mobility"/>
-            <input placeholder="Упражнения" id="exercises"/>
-            <input placeholder="Активность" id="activity"/>
-            <input placeholder="Шаги" id="steps"/>
-            <button>Submit</button>
-          </div>
+          <Inputs />
         </section>
       </section>
       <section id="second">
-        {/* <AdditionalInfo></AdditionalInfo> */}
-        {/* <WeatherWidget></WeatherWidget> */}
+        <AdditionalInfo></AdditionalInfo>
+        <WeatherWidget></WeatherWidget>
       </section>
     </div>
   );

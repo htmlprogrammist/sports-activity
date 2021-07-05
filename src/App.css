@@ -21,9 +21,13 @@
 #inputs {
   display: flex;
   flex-direction: row;
-  padding: 0 40px;
+  padding: 0 24px;
   gap: 20px;
   height: 26px;
+}
+
+input {
+  width: 200px;
 }
 
 #second {

@@ -5,8 +5,8 @@ const Container = styled.section`
   border-radius: 14px;
 `
 
-const AdditionalInfo = () => {
+const AdditionalInfo = () => (
   <Container>Дополнительная инфа</Container>
-}
+)
 
 export default AdditionalInfo

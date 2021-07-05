@@ -70,7 +70,6 @@ const ActivityRings = (props) => (
         type="radialBar"
       />
     </Card>
-    <h1>Шаги: 10000</h1>
   </Wrapper>
 )
 
