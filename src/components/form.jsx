@@ -5,7 +5,7 @@ const Container = styled.section`
   border-radius: 14px;
 `
 
-const Inputs = () => (
+const Form = () => (
   <Container>
     <div id="inputs">
       <input type="date" placeholder="Дата"/>
@@ -18,4 +18,4 @@ const Inputs = () => (
   </Container>
 )
 
-export default Inputs
+export default Form

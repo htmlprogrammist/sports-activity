@@ -2,7 +2,7 @@ import './App.css';
 import ActivityRings from './components/rings'
 import WeatherWidget from './components/weatherWidget'
 import AdditionalInfo from './components/additional-info'
-import Inputs from './components/inputs'
+import Form from './components/form'
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <ActivityRings series={[100, 90, 85]}></ActivityRings>
         </section>
         <section id="main-info">
-          <Inputs />
+          <Form />
         </section>
       </section>
       <section id="second">
