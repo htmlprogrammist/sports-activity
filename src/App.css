@@ -18,15 +18,16 @@
   column-gap: 40px;
 }
 
-#inputs {
+#inputs-form {
   display: flex;
+  width: 1200px;
   flex-direction: row;
   padding: 0 24px;
-  gap: 20px;
-  height: 26px;
+  justify-content: space-between;
 }
 
 input {
+  height: 24px;
   width: 200px;
 }
 

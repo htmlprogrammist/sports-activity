@@ -5,10 +5,10 @@ const Container = styled.section`
   border-radius: 14px;
 `
 
-const Form = () => (
+const FormGoal = () => (
   <Container>
-    <div id="inputs-form" className="inputs">
-      <input type="date" placeholder="Дата"/>
+    <h1>Выберите цель:</h1>
+    <div id="input-goal">
       <input placeholder="Подвижность" id="mobility" type="number"/>
       <input placeholder="Упражнения" id="exercises" type="number"/>
       <input placeholder="Активность" id="activity" type="number"/>
@@ -18,4 +18,4 @@ const Form = () => (
   </Container>
 )
 
-export default Form
+export default FormGoal

@@ -57,12 +57,8 @@ const ActivityRings = (props) => (
     <Card width="auto">
       <CardHeader>
         <CardText size="1rem" opacity={0.75}>
-          Today
+          {props.day}
         </CardText>
-        {/* <CardText size="0.75rem" opacity={0.5}> */}
-        {/* <CardText size="1rem" opacity={0.75}>
-          Today
-        </CardText> */}
       </CardHeader>
       <ChartWrapper
         options={state.options}
