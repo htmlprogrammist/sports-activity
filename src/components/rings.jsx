@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { rgba } from "polished"
 import Chart from "react-apexcharts"
+import DaysInfo from "./days-info"
 
 const Wrapper = styled.div`
   display: flex;
@@ -52,6 +53,8 @@ let state = {
   }
 }
 
+// может быть их в цикле рендерить? В цикле получаю данные с таблицы и отрисовываю каждый круг с полученными в цикле данными. Иначе я не знаю, как передать в каждый круг свои данные, если только не создавать массив и через a[a.length - 1] получать данные
+// можно создать isToday и isYesterday в state, чтобы можно было стили рендерить другие (сегодня и вчера побольше, чем обычные штуки)
 const ActivityRings = (props) => (
   <Wrapper>
     <Card width="auto">
@@ -66,6 +69,10 @@ const ActivityRings = (props) => (
         type="radialBar"
       />
     </Card>
+    <DaysInfo 
+      steps={6543}
+      kkal={401}
+    />
   </Wrapper>
 )
 

@@ -1,5 +1,5 @@
-import './App.css';
 import React from 'react';
+import './App.css';
 import ActivityRings from './components/rings';
 import WeatherWidget from './components/weatherWidget';
 import AdditionalInfo from './components/additionalInfo/additional-info';
@@ -21,8 +21,10 @@ class App extends React.Component {
       isAnswerVisible: false,
       isActiveButton: false,
       stateOfItems: this.firstStateOfItems
+
     }
   }
+
   render() {
     return (
       <div className="App">
