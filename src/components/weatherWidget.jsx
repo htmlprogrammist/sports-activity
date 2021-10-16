@@ -7,7 +7,9 @@ const Container = styled.section`
   height: 30vh;
   padding: 20px;
   color: #FFF;
-  margin: 20px;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(34, 60, 80, 0.2); 
+  -moz-box-shadow: 0px 5px 10px 0px rgba(34, 60, 80, 0.2); 
+  box-shadow: 0px 5px 10px 0px rgba(34, 60, 80, 0.2);
 `
 
 const weatherWidget = () => (

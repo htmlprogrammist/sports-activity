@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f3f2f7;
 }
 
 #App {
@@ -38,9 +39,51 @@ body {
 input {
   height: 24px;
   width: 200px;
+  font-size: 16px;
+  color: #88898e;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  /* background: transparent; */
+  background-color: #e0e1e6;
+}
+
+input:focus {
+  outline: none;
+}
+
+#form-submit {
+  outline: none;
+  width: 80px;
+  border-radius: 8px;
+  border: 1px solid #111;
+  background: transparent;
+  color: #111;
+  font-size: 12px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+#form-submit:hover {
+  background: #111;
+  color: #FFF;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 30px 0 rgba(0,0,0,0.19);
+}
+
+#form-submit:active {
+  transform: translateY(10px);
 }
 
 #second {
   display: grid;
-  grid-template-columns: 66% 34%;
+  grid-template-columns: 33% 33% 34%;
+  grid-template-rows: 400px 100px;
+}
+
+#widgets {
+  display: grid;
+  width: 96vw;
+  grid-template-columns: 33% 33% 33%;
+  padding: 18px;
+  gap: 18px;
 }
